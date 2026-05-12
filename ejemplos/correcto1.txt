@@ -1,0 +1,11 @@
+flujo Tesis {
+    estado borrador inicial;
+    estado aprobado final;
+    rol director puede [revisar, aprobar];
+    desde borrador hacia aprobado cuando director.aprobar;
+    accion sellar {
+        asignar estado = "aprobado";
+        registrar("Documento aprobado");
+        notificar director con "La tesis fue aprobada";
+    }
+}

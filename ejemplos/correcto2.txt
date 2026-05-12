@@ -1,0 +1,14 @@
+flujo Vacaciones {
+    estado solicitud inicial;
+    estado aprobado final;
+    estado rechazado final;
+    rol empleado puede [crear];
+    rol jefe puede [revisar, aprobar, rechazar];
+    desde solicitud hacia aprobado cuando jefe.aprobar;
+    desde solicitud hacia rechazado cuando jefe.rechazar;
+    accion crearSolicitud {
+        asignar estado = "pendiente";
+        registrar("Solicitud creada");
+        notificar jefe con "Nueva solicitud de vacaciones";
+    }
+}

@@ -1,0 +1,5 @@
+flujo Error {
+    estado inicio inicial
+    estado fin final;
+    rol admin puede [crear];
+}

@@ -1,0 +1,4 @@
+flujo ErrorPermiso {
+    estado inicio inicial;
+    rol usuario puede [volar, saltar];
+}
