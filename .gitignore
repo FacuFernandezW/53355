@@ -3,5 +3,3 @@ generated/
 .antlr/
 *.interp
 *.tokens
-*.log
-.vscode/
