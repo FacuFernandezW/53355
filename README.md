@@ -46,6 +46,9 @@ Ejemplo con error (permiso inválido):
    cp ejemplos/error2.txt input.txt
    npm start
 
+EN CASO DE NO QUERER HACERLO CON UN SCRIPT:
+Deberán copiar el contenido de correcto1.txt y pegarlo en input.txt, lo mismo para el correcto2.txt, error1.txt y error2.txt
+
 ## Salida del programa
 - Tabla de lexemas-tokens
 - Análisis sintáctico (correcto/incorrecto con línea y causa)
